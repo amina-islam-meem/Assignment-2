@@ -10,15 +10,15 @@
 </head>
 
 <body>
-    <div class="container">
-        <!-- Header -->
-        <header>
+    <!-- Header (Full Width) -->
+    <header>
+        <div class="container header-content">
             <div class="logo">
                 <span>Tech</span><span>Wave</span>
             </div>
             
             <!-- Desktop Navigation -->
-            <nav class="navbar">
+            <nav class="desktop-nav">
                 <ul class="nav-links">
                     <li><a href="#about">About</a></li>
                     <li><a href="#episodes">Episodes</a></li>
@@ -27,19 +27,19 @@
             </nav>
             
             <!-- Mobile Menu Toggle -->
-            <span class="s">
-                <img src="assets/hamburger-menu.png" alt="">
-            </span>
+            <div class="mobile-menu-icon">
+                <img src="assets/hamburger-menu.png" alt="Menu">
+            </div>
             
             <!-- Desktop Subscribe Button -->
             <a href="" class="btn subscribe-btn">Subscribe <i class="fa-solid fa-arrow-right"></i></a>
-        </header>
+        </div>
+    </header>
 
-        <!-- Hero Section -->
-        <section class="hero" id="home">
-            <!-- Soundwave Background Image -->
-            <div class="soundwave-bg">
-                <!-- Center Content -->
+    <!-- Hero Section (Full Width Background) -->
+    <section class="hero" id="home">
+        <div class="soundwave-bg">
+            <div class="container">
                 <div class="hero-center-content">
                     <!-- Microphone Circle -->
                     <div class="mic-container">
@@ -56,24 +56,27 @@
                     <!-- Hero Buttons -->
                     <div class="hero-buttons">
                         <a href="#spotify" class="btn spotify-btn">
-                            <img src="assets/spotify.png" alt="Spotify"> Listen on Spotify
+                            <img src="assets/spotify.png" alt=""> Listen on Spotify
                         </a>
                         <a href="#subscribe" class="btn message-btn">
-                            <img src="assets/message.png" alt="Subscribe"> Subscribe
+                            <img src="assets/message.png" alt=""> Subscribe
                         </a>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Rest of your HTML remains the same -->
-        <!-- ABOUT & STATS -->
-        <section class="about-section" id="about">
+    <!-- ABOUT & STATS -->
+    <section class="about-section" id="about">
+        <div class="container">
             <h2 class="section-title">About The Podcast</h2>
-            <p>TechWave is your go-to podcast for staying ahead in the fast-paced world of technology.</p>
-            <p>We break down complex topics into digestible insights, explore productivity strategies that actually work, and share stories of personal growth from industry leaders.</p>
-            <br>
-            <p>Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
+            <div class="about-text-wrapper">
+                <p>TechWave is your go-to podcast for staying ahead in the fast-paced world of technology.</p>
+                <p>We break down complex topics into digestible insights, explore productivity strategies that actually work, and share stories of personal growth from industry leaders.</p>
+                <br>
+                <p>Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
+            </div>
 
             <div class="stats-container">
                 <div class="stat-item">
@@ -93,11 +96,13 @@
                     <p>Industry Experts</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- WHY CHOOSE SECTION -->
-        <section class="features-section" id="features">
-            <div class="features-bg-glow"></div>
+    <!-- WHY CHOOSE SECTION -->
+    <section class="features-section" id="features">
+        <div class="features-bg-glow"></div>
+        <div class="container" style="position: relative; z-index: 2;">
             <h2 class="section-title">Why Choose TechWave</h2>
             
             <div class="bento-grid">
@@ -143,20 +148,19 @@
                     <p>Access show notes, transcripts, and additional learning materials for every episode.</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- FEATURED EPISODES -->
-        <section class="episodes-section" id="episodes">
+    <!-- FEATURED EPISODES -->
+    <section class="episodes-section" id="episodes">
+        <div class="container">
             <h2 class="section-title">Featured Episodes</h2>
             
             <div class="episodes-grid">
                 <div class="episode-card">
-                    <div class="episode-img" style="background-image: url('https://images.unsplash.com/photo-1598550476439-c9483255b261?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');">
-                        <div class="play-btn"><i class="fa-solid fa-play"></i></div>
-                    </div>
+                    
                     <div class="episode-content">
-                        <h3>The Future of AI in Everyday Life</h3>
-                        <p>Exploring how artificial intelligence is transforming our daily routines.</p>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/x2juH8lbtgM?si=OLatz_TJBvGTHjvM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         <div class="episode-meta">
                             <i class="fa-regular fa-clock"></i> 42 min
                         </div>
@@ -164,12 +168,9 @@
                 </div>
 
                 <div class="episode-card">
-                    <div class="episode-img" style="background-image: url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');">
-                        <div class="play-btn"><i class="fa-solid fa-play"></i></div>
-                    </div>
+                
                     <div class="episode-content">
-                        <h3>Building Better Habits for Remote Work</h3>
-                        <p>Practical strategies for staying productive in a remote environment.</p>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/kNRiSduUcvM?si=s7SRvA4ChegwuN_Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                   
                         <div class="episode-meta">
                             <i class="fa-regular fa-clock"></i> 35 min
                         </div>
@@ -177,22 +178,21 @@
                 </div>
 
                 <div class="episode-card">
-                    <div class="episode-img" style="background-image: url('https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');">
-                        <div class="play-btn"><i class="fa-solid fa-play"></i></div>
-                    </div>
+                    
                     <div class="episode-content">
-                        <h3>Career Growth in Tech: A Roadmap</h3>
-                        <p>Expert advice on navigating your tech career from junior to senior roles.</p>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/G-2d8J-PJzI?si=mAxFBA8abnFN23vC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                       
                         <div class="episode-meta">
                             <i class="fa-regular fa-clock"></i> 51 min
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- HOST SECTION -->
-        <section class="host-section" id="host">
+    <!-- HOST SECTION -->
+    <section class="host-section" id="host">
+        <div class="container">
             <h2 class="section-title">Meet The Host</h2>
             <div class="host-card">
                 <img src="assets/host.png" alt="Host" class="host-img">
@@ -209,8 +209,8 @@
                     </div>
                 </div>
             </div>
-        </section>
-    </div> <!-- End Container -->
+        </div>
+    </section>
 
     <!-- FOOTER -->
     <footer class="footer-section" id="footer">
